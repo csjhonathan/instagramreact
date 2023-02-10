@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, likesQuantt}) => {
-    const [likes, setLikes] = useState(Number(likesQuantt))
+    const [likes, setLikes] = useState(Number(likesQuantt.replaceAll(".", "")))
     const [heart, setHeart] = useState("heart-outline");
     const [bookmark, setBookmark] = useState("bookmark-outline");
     const [like, setLike] = useState("likeHeartOcute")
@@ -9,10 +9,10 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
     const handleLike = () =>{
         if(heart === "heart-sharp"){
             setHeart("heart-outline")
-            setLikes(likes-0.001)
+            setLikes(likes-1)
         } else {
             setHeart("heart-sharp")
-            setLikes(likes+0.001)
+            setLikes(likes+1)
         }
     }
 
