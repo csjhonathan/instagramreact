@@ -328,12 +328,10 @@ ion-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  opacity: .9;
+  opacity: .8;
   font-size: 100px;
-  color: red;
+  color: white;
   transition: all .3s;
-  display: initial;
 }
 
 .likeHeartOcute {
@@ -341,8 +339,7 @@ ion-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
   transition: all .3s;
-  color: red;
+  color: white;
   font-size: 0px;
 }
