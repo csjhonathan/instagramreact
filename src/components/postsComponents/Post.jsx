@@ -43,7 +43,7 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
                 </div>
 
                 <div class="conteudo">
-                    <img src={postImg} alt={postImg} onClick = {handleLikeDblClick} onDoubleClick = {handleLikeDblClick} data-test="post-image"/>
+                    <img src={postImg} alt={postImg} onDoubleClick = {handleLikeDblClick} data-test="post-image"/>
                     <ion-icon name="heart" class = {like} ></ion-icon>
                 </div>
 
