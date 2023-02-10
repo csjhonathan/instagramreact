@@ -43,7 +43,7 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
                 </div>
 
                 <div class="conteudo">
-                    <img src={postImg} alt={postImg} onDoubleClick = {handleLikeDblClick} data-test="post-image"/>
+                    <img src={postImg} alt={postImg} onClick = {handleLikeDblClick} onDoubleClick = {handleLikeDblClick} data-test="post-image"/>
                     <ion-icon name="heart" class = {like} ></ion-icon>
                 </div>
 
@@ -62,7 +62,7 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
                     <div class="curtidas">
                         <img src={hihglightLikeImg} alt={hihglightLike} />
                         <div class="texto">
-                            Curtido por <strong>{hihglightLike}</strong> e <strong>outras <span data-test="likes-number">{likes}</span> pessoas</strong>
+                            Curtido por <strong>{hihglightLike}</strong> e <strong data-test="likes-number">outras {likes} pessoas</strong>
                         </div>
                     </div>
                 </div>
