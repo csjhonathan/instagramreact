@@ -15,11 +15,11 @@ const Usuario = ({nome, imagem, alt}) => {
 
     return (
         <div class="usuario">
-            <img src={image} alt={alt} onClick = {handelImage}/>
+            <img src={image} alt={alt} onClick = {handelImage} data-test="profile-image"/>
             <div class="texto">
                 <span>
-                    <strong>{name}</strong>
-                    <ion-icon name="pencil" onClick = {handleName}></ion-icon>
+                    <strong data-test="name" >{name}</strong>
+                    <ion-icon name="pencil" onClick = {handleName} data-test="edit-name"></ion-icon>
                 </span>
             </div>
         </div>
