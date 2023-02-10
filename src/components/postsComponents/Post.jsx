@@ -4,7 +4,7 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
     const [likes, setLikes] = useState(Number(likesQuantt.replaceAll(".", "")))
     const [heart, setHeart] = useState("heart-outline");
     const [bookmark, setBookmark] = useState("bookmark-outline");
-    const [like, setLike] = useState("likeHeartOcute")
+    const [animatedHeart, setAnimatedHeart] = useState("animatedLikeHeart ocuted")
     
     const handleLike = () =>{
         if(heart === "heart-sharp"){
@@ -20,9 +20,9 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
         if(heart !== "heart-sharp"){
             handleLike();
         }
-        setLike("likeHeart")
+        setAnimatedHeart("animatedLikeHeart showed")
         setTimeout(()=> {
-            setLike("likeHeartOcute")
+            setAnimatedHeart("animatedLikeHeart ocuted")
         }, 1000)
     }
 
@@ -44,7 +44,7 @@ const Post = ({author, profileImg, postImg, hihglightLike, hihglightLikeImg, lik
 
                 <div class="conteudo">
                     <img src={postImg} alt={postImg} onDoubleClick = {handleLikeDblClick} data-test="post-image"/>
-                    <ion-icon name="heart" class = {like} ></ion-icon>
+                    <ion-icon name="heart" class = {animatedHeart} ></ion-icon>
                 </div>
 
                 <div class="fundo">

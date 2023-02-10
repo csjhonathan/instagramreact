@@ -323,23 +323,20 @@ ion-icon {
   color: red;
 }
 
-.likeHeart {
+.animatedLikeHeart {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: .8;
-  font-size: 100px;
   color: white;
   transition: all .3s;
+  opacity: .7;
 }
 
-.likeHeartOcute {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all .3s;
-  color: white;
+.showed { /*mostra o coração*/
+  font-size: 100px;
+}
+
+.ocuted { /*oculta o coração*/
   font-size: 0px;
 }
