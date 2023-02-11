@@ -4,9 +4,9 @@ const Stories = () => {
     return (
 
         <div class="stories">
-            {storiesItemList.map((story, index)=> (
+            {storiesItemList.map((story, index) => (
                 <Story
-                    key = {index}
+                    key={index}
                     nome={story.nome}
                     imagem={story.imagem}
                 />))}

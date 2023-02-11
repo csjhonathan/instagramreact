@@ -333,10 +333,12 @@ ion-icon {
   opacity: .7;
 }
 
-.showed { /*mostra o coração*/
+.showed {
+  /*mostra o coração*/
   font-size: 100px;
 }
 
-.ocuted { /*oculta o coração*/
+.ocuted {
+  /*oculta o coração*/
   font-size: 0px;
 }

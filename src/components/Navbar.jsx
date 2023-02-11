@@ -27,4 +27,4 @@ const NavBar = () => {
     )
 }
 
-export {NavBar}
+export { NavBar }
